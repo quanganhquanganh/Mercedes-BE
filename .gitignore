@@ -1,0 +1,4 @@
+dist/
+distLambda/
+*.zip
+.env

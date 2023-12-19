@@ -1,0 +1,21 @@
+{
+  "$schema": "./schemas/package.schema.json",
+  "name": "lambda-express",
+  "template": "lambda-express",
+  "templateVersion": "0.1.96",
+  "configuration": {},
+  "deployments": [
+    {
+      "name": "prod",
+      "configuration": {
+        "lambdaName": "itss-hustutor-api",
+        "apiDomain": "api.hustutor.dobuiquanganh.com",
+        "hostedZoneDomain": "dobuiquanganh.com",
+        "cors": "http://localhost:3000,https://hustutor.dobuiquanganh.com"
+      },
+      "awsUser": "quanganh-ops",
+      "awsRegion": "us-east-1",
+      "tfStateKey": "lambda-express-prod-0644860e8f9294bafb1b.tfstate"
+    }
+  ]
+}

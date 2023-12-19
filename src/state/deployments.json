@@ -1,0 +1,27 @@
+[
+  {
+    "name": "prod",
+    "terraform": {
+      "gateway_url": {
+        "sensitive": false,
+        "type": "string",
+        "value": "https://67l0ite4y6.execute-api.us-east-1.amazonaws.com/prod"
+      },
+      "lambda_arn": {
+        "sensitive": false,
+        "type": "string",
+        "value": "arn:aws:lambda:us-east-1:825764601905:function:itss-hustutor-api"
+      },
+      "lambda_function_name": {
+        "sensitive": false,
+        "type": "string",
+        "value": "itss-hustutor-api"
+      },
+      "lambda_invoke_arn": {
+        "sensitive": false,
+        "type": "string",
+        "value": "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:825764601905:function:itss-hustutor-api/invocations"
+      }
+    }
+  }
+]
