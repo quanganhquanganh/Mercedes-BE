@@ -1,5 +1,5 @@
 {
-  "extends": "../../tsconfig.base.json",
+  //"extends": "./tsconfig.base.json",
   "include": [
     "./src/**/*",
     "./src/**/*.json",
@@ -8,7 +8,32 @@
   ],
   "compilerOptions": {
     "outDir": "dist",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "incremental": true,
+        "target": "ES2019",
+        "composite": true,
+        "module": "commonjs",
+        "lib": [
+            "dom",
+            "ESNext"
+        ],
+        "allowJs": true,
+        "checkJs": false,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "noImplicitAny": false,
+        "strictNullChecks": true,
+        "esModuleInterop": true,
+        "useUnknownInCatchVariables": false,
+        "resolveJsonModule": true,
+        "forceConsistentCasingInFileNames": true,
+        "types": [
+            "jest",
+            "node"
+        ]
   },
   "references": []
 }

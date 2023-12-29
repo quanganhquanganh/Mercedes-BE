@@ -13,7 +13,7 @@ describe('Root Endpoint', () => {
     await rootHandler(req, res);
 
     expect(res.json).toHaveBeenCalled();
-    const resVal = res.json.mock.calls[0][0];
+    const resVal = (res.json as any).mock.calls[0][0];
     expect(resVal).toBe('success');
   });
 });
